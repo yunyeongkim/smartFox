@@ -1,0 +1,15 @@
+#as Administrator
+sudo: required
+
+#languege (platform) choose
+langueage: generic
+
+#Docker Enviroment
+services:
+ - docker
+
+#Script running enviroment
+before_install:
+ - echo "start creating an image with Dockerfile"
+ - docker build -t yunyeong93/sfs2s -f Dockerfile
+
