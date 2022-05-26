@@ -13,3 +13,8 @@ before_install:
  - echo "start creating an image with Dockerfile"
  - docker build -t yunyeong93/sfs2s -f Dockerfile
 
+script: 
+ - docker run --name sfs2x -d -p 8080:8080 -p 9933:993 -e CI=true yunyeong93/sfs2x --coverage
+
+after_success:
+ - echo "Test Sucess"
