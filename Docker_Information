@@ -1,0 +1,33 @@
+
+# make image
+docker 
+
+# run with Port Mapping 
+docker run --name sfs2x -d -p 8080:8080 -p 9933:993 yunyeong93/docker_sfs
+
+# Copy (or Change Config & Extension)
+
+# Copy the Extension's zone configuration
+cp C:\Users\kimyunyeong\IdeaProjects\testForSfs\out\artifacts\myExtension\myExtension.jar sfs2x:\opt\SmartFoxServer_2X\SFS2X\extesions\StanWorld
+
+# Copy the SmartFox2X core configuration
+docker cp C:\Users\kimyunyeong\Projects\StanWorldServer\ConfigurationFiles\SFS2X\config\core.xml sfs2x:\opt\SmartFoxServer_2X\SFS2X\config
+
+cp C:\Users\kimyunyeong\Projects\StanWorldServer\ConfigurationFiles\SFS2X\config\server.xml sfs2x:\opt\SmartFoxServer_2X\SFS2X\config
+
+# Copy the Extension's configuration file
+docker cp C:\Users\kimyunyeong\Projects\StanWorldServer\ConfigurationFiles\SFS2X\configuration.config sfs2x:\opt\SmartFoxServer_2X\SFS2X\zones
+
+# Copy the ServerData files
+if (!(Test-Path $SmartFoxServerFolder\SFS2X\ServerData -ErrorAction SilentlyContinue)) {
+    $null = New-Item -Type Directory -Path $SmartFoxServerFolder\SFS2X\ -Name ServerData
+}
+Copy-Item ServerData $SmartFoxServerFolder\SFS2X\ -Force -Recurse 
+
+# Remove config/UploadsLock.txt if exists
+if (Test-Path $SmartFoxServerFolder\SFS2X\config\UploadsLock.txt -ErrorAction SilentlyContinue) {
+    $null = Remove-Item -Path $SmartFoxServerFolder\SFS2X\config\UploadsLock.txt
+}
+
+2022-05-22 <Things To do>
+1. AWS 우분투 서버에 도커 배포하기 
