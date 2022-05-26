@@ -1,0 +1,11 @@
+version: "3"
+services:
+  sfs:
+    image: "yunyeong93/sfs2x:latest"
+    volumes:
+        ./data/config/server.xml:opt/SmartFoxServer_2X/SFS2X/config/server.xml
+        ./data/zones:opt/SmartFoxServer_2X/SFS2X/zones
+        ./data/extensions:opt/SmartFoxServer_2X/SFS2X/extensions
+    ports:
+      - "8080:8080"
+      - "9933:9933"
