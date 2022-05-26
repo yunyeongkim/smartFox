@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="client:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/client_jar</output-path>
+    <root id="archive" name="client.jar">
+      <element id="module-output" name="client" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev_Settings/SFS2X_API_Java_v1.7.7/jdom.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev_Settings/SFS2X_API_Java_v1.7.7/SFS2X_API_Java.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev_Settings/SFS2X_API_Java_v1.7.7/slf4j-api-1.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev_Settings/SFS2X_API_Java_v1.7.7/commons-lang-2.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev_Settings/SFS2X_API_Java_v1.7.7/netty-3.2.2.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev_Settings/SFS2X_API_Java_v1.7.7/sfs2x-client-core.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev_Settings/SFS2X_API_Java_v1.7.7/slf4j-simple-1.6.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

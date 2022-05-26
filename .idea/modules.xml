@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../LiveRoomChat.iml" filepath="$PROJECT_DIR$/../LiveRoomChat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../client/RoomChat.iml" filepath="$PROJECT_DIR$/../client/RoomChat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../clientForRoomchat.iml" filepath="$PROJECT_DIR$/../clientForRoomchat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testForSfs.iml" filepath="$PROJECT_DIR$/testForSfs.iml" />
+    </modules>
+  </component>
+</project>

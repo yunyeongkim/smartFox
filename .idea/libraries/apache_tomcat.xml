@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="apache-tomcat">
+    <CLASSES>
+      <root url="file://$USER_HOME$/SmartFoxServer_2X/SFS2X/lib/apache-tomcat" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

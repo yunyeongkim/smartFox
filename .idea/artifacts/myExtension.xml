@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="myExtension">
+    <output-path>$USER_HOME$/SmartFoxServer_2X/SFS2X/extensions/MyFirstExtension</output-path>
+    <root id="archive" name="myExtension.jar">
+      <element id="module-output" name="testForSfs" />
+    </root>
+  </artifact>
+</component>
